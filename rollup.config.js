@@ -64,7 +64,7 @@ const getConfig = ({ outFile, format, mode }) => {
   const isProduction = mode === 'production';
 
   const version = pkg.version;
-  const external = Object.keys({ ...pkg.dependencies || ''});
+  const external = Object.keys({ rimraf: '', ...pkg.devDependencies || ''});
 
   const globals = external.reduce((prev, current) => {
     prev[current] = current;

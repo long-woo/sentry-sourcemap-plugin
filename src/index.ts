@@ -1,6 +1,7 @@
 import { Compiler } from 'webpack';
-import SentryWebpackPlugin, { SentryCliPluginOptions } from '@sentry/webpack-plugin';
+import { SentryCliPluginOptions } from '@sentry/webpack-plugin';
 import rimraf from 'rimraf'
+const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 
 interface ISentrySourcemapPluginOptions {
   /**
