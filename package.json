@@ -3,7 +3,8 @@
   "displayName": "sentry-sourcemap-plugin",
   "version": "0.0.1",
   "description": "Webpack 插件",
-  "main": ".dist/index.js",
+  "main": "dist/sentry-sourcemap-plugin.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "nodemon",
     "build": "rollup -c"
@@ -14,7 +15,6 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@types/rimraf": "^3.0.0",
-    "@types/sentry__webpack-plugin": "^1.10.1",
     "@types/webpack": "^5.28.0",
     "nodemon": "^2.0.9",
     "rollup": "^2.52.3",
@@ -24,7 +24,7 @@
     "typescript": "^4.3.4",
     "webpack": "^5.41.0"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@sentry/webpack-plugin": "^1.15.1",
     "rimraf": "^3.0.2"
   }

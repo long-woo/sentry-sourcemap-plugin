@@ -7,7 +7,7 @@ interface ISentrySourcemapPluginOptions {
   /**
    * Map 文件地址。默认 `dist` 目录下的所有 .map 文件
    */
-  path: string;
+  path?: string;
 
   /**
    * Sentry 配置
@@ -25,8 +25,10 @@ class SentrySourcemapPlugin {
   }
 
   constructor(options: ISentrySourcemapPluginOptions) {
-    this.path = options.path
-    this.sentryConfig = options.sentryConfig
+    if (options?.path) {
+      this.path = options.path
+    }
+    this.sentryConfig = options?.sentryConfig
   }
 
   /**
