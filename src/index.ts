@@ -30,6 +30,7 @@ class SentrySourcemapPlugin {
    * 获取 package.json 文件的 version
    */
   getRelease() {
+    console.log(process.env)
     const fileContent = fs.readFileSync('./package.json', { encoding: 'utf-8' })
     const json = JSON.parse(fileContent)
     

@@ -1,16 +1,25 @@
 {
   "name": "@longwoo/sentry-sourcemap-plugin",
   "displayName": "sentry-sourcemap-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "扩展 `@sentry/webpack-plugin` 插件",
   "main": "dist/sentry-sourcemap-plugin.min.js",
   "module": "dist/sentry-sourcemap-plugin.es.min.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "nodemon",
-    "build": "rollup -c"
+    "build": "rollup -c & tsc --outDir dist src/postinstall.ts",
+    "postinstall": "node dist/postinstall.js"
   },
   "author": "long.woo",
+  "repository": {
+    "url": "git+https://github.com/long-woo/sentry-sourcemap-plugin.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/long-woo/sentry-sourcemap-plugin/issues"
+  },
+  "homepage": "https://github.com/long-woo/sentry-sourcemap-plugin#readme",
   "license": "MIT",
   "files": [
     "dist",
