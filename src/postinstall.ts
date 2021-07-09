@@ -9,7 +9,7 @@ const PROPERTIES_FILE = pathResolve('./sentry.properties')
  * 检查项目根目录 Sentry 配置文件是否存在
  * @returns `true`: 存在，`false`: 不存在
  */
-const checkSentryrcExist = () => fs.existsSync(RC_FILE) && fs.existsSync(PROPERTIES_FILE)
+const checkSentryrcExist = () => fs.existsSync(RC_FILE) || fs.existsSync(PROPERTIES_FILE)
 
 /**
  * 在项目根目录创建 `.sentryclirc` 文件
