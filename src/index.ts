@@ -16,25 +16,12 @@ class SentrySourcemapPlugin {
   }
 
   constructor(options: SentryCliPluginOptions) {
-    const release = this.getRelease()
-
     this.sentryConfig = {
       ...this.sentryConfig,
-      release,
+      release: process.env.npm_package_version,
       ...options
     }
     this.mapFilePath = `${this.sentryConfig.include}/**/*.map`
-  }
-
-  /**
-   * 获取 package.json 文件的 version
-   */
-  getRelease() {
-    console.log(process.env)
-    const fileContent = fs.readFileSync('./package.json', { encoding: 'utf-8' })
-    const json = JSON.parse(fileContent)
-    
-    return json.version
   }
 
   /**
