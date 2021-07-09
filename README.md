@@ -2,6 +2,11 @@
 
 > 扩展 `@sentry/webpack-plugin` 插件。
 
+![npm (scoped)](https://img.shields.io/npm/v/@longwoo/sentry-sourcemap-plugin?color=%23be3031&style=flat-square)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/long-woo/sentry-sourcemap-plugin?include_prereleases&style=flat-square)
+![npm download](https://img.shields.io/npm/dm/@longwoo/sentry-sourcemap-plugin?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/long-woo/sentry-sourcemap-plugin?style=flat-square)
+
 Sentry 上传 sourcemap 文件后，自动删除 .map 文件。
 
 ⚠️ 此插件默认配置了一些初始值：
