@@ -1,7 +1,7 @@
 {
   "name": "@longwoo/sentry-sourcemap-plugin",
   "displayName": "sentry-sourcemap-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "扩展 `@sentry/webpack-plugin` 插件",
   "main": "dist/sentry-sourcemap-plugin.min.js",
   "module": "dist/sentry-sourcemap-plugin.es.min.js",
