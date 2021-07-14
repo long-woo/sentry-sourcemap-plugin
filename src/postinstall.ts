@@ -2,6 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 const pathResolve = (fileName: string) => path.resolve(process.cwd(), '../../../', fileName)
+
 const RC_FILE = pathResolve('./.sentryclirc')
 const PROPERTIES_FILE = pathResolve('./sentry.properties')
 
@@ -19,8 +20,7 @@ const createSentryrc = () => {
   if (isExist) return
 
   // 创建 .sentryrc 文件
-  const fileContent = `
-auth.token = Auth Token
+  const fileContent = `auth.token = Auth Token
 
 defaults.url = Sentry 服务器地址
 defaults.org = 组织名称

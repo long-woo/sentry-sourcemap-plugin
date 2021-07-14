@@ -59,10 +59,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@sentry/cli@^1.64.1":
-  version "1.66.0"
-  resolved "https://registry.nlark.com/@sentry/cli/download/@sentry/cli-1.66.0.tgz#0526f1bc1c0570ce72ed817190af92f3b63a2e9a"
-  integrity sha1-BSbxvBwFcM5y7YFxkK+S87Y6Lpo=
+"@sentry/cli@^1.67.1":
+  version "1.67.1"
+  resolved "https://registry.yarnpkg.com/@sentry/cli/-/cli-1.67.1.tgz#0ae0a892851913083e31f64c7b0ffcdf9f59da58"
+  integrity sha512-TKPBC/mMaC6EageH3s4QM4PVr/QFSfgRuGqfc7cAzRRLnMLTvXsvxlEkVnRGCDglvSru0/NwHf1XSv/Z084zkQ==
   dependencies:
     https-proxy-agent "^5.0.0"
     mkdirp "^0.5.5"
@@ -71,12 +71,12 @@
     progress "^2.0.3"
     proxy-from-env "^1.1.0"
 
-"@sentry/webpack-plugin@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.nlark.com/@sentry/webpack-plugin/download/@sentry/webpack-plugin-1.15.1.tgz#deb014fce8c1b51811100f25ec9050dd03addd9b"
-  integrity sha1-3rAU/OjBtRgREA8l7JBQ3QOt3Zs=
+"@sentry/webpack-plugin@^1.16.0":
+  version "1.16.0"
+  resolved "https://registry.nlark.com/@sentry/webpack-plugin/download/@sentry/webpack-plugin-1.16.0.tgz#f9b15b5bb485995e776729b71bcf2d9fad7dca7a"
+  integrity sha1-+bFbW7SFmV53Zym3G88tn619yno=
   dependencies:
-    "@sentry/cli" "^1.64.1"
+    "@sentry/cli" "^1.67.1"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -471,7 +471,7 @@ caniuse-lite@^1.0.30001219:
   resolved "https://registry.nlark.com/caniuse-lite/download/caniuse-lite-1.0.30001241.tgz?cache=0&sync_timestamp=1624942604834&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001241.tgz#cd3fae47eb3d7691692b406568d7a3e5b23c7598"
   integrity sha1-zT+uR+s9dpFpK0BlaNej5bI8dZg=
 
-chalk@^2.0.0, chalk@^2.4.2:
+chalk@^2.0.0:
   version "2.4.2"
   resolved "https://registry.nlark.com/chalk/download/chalk-2.4.2.tgz?cache=0&sync_timestamp=1618995355917&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchalk%2Fdownload%2Fchalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=
@@ -1470,13 +1470,6 @@ rimraf@^3.0.2:
   integrity sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=
   dependencies:
     glob "^7.1.3"
-
-rollup-plugin-progress@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.nlark.com/rollup-plugin-progress/download/rollup-plugin-progress-1.1.2.tgz#5c1dfe7c50f654906bc34d167d5512ee1a4b72d5"
-  integrity sha1-XB3+fFD2VJBrw00WfVUS7hpLctU=
-  dependencies:
-    chalk "^2.4.2"
 
 rollup-plugin-terser@^7.0.2:
   version "7.0.2"

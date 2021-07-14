@@ -1,17 +1,9 @@
-import path from 'path';
 import resolve from '@rollup/plugin-node-resolve';
 import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
-import progress from 'rollup-plugin-progress';
 
 import pkg from './package.json';
-
-/**
- * 文件的绝对路径
- * @param {*} p 目录名
- */
-const pathResolve = p => path.resolve(__dirname, p);
 
 /**
  * 文件头说明
@@ -20,12 +12,9 @@ const pathResolve = p => path.resolve(__dirname, p);
  * @param {*} version 版本号
  */
 const generateBanner = (name, fileName, version) => {
-  const currentYear = new Date().getFullYear();
-  const year = currentYear === 2021 ? currentYear : `2020-${currentYear}`;
-
   return `/*! **************************************************
 ** ${name}(${fileName}) version ${version}
-** (c) ${year} long.woo
+** (c) long.woo
 ** https://github.com/long-woo/sentry-sourcemap-plugin
 *************************************************** */\n`;
 };
@@ -43,12 +32,12 @@ const buildFormat = fileName => ({
   },
   es: {
     outFile: `${fileName}.es.js`,
-    format: 'es',
+    format: 'esm',
     mode: 'development'
   },
   'es-prod': {
     outFile: `${fileName}.es.min.js`,
-    format: 'es',
+    format: 'esm',
     mode: 'production'
   }
 });
@@ -73,13 +62,13 @@ const getConfig = ({ outFile, format, mode }) => {
   }, {});
 
   return {
-    input: pathResolve(`src/index.ts`),
+    input: 'src/index.ts',
     output: {
-      file: pathResolve(`dist/${outFile}`),
+      file: `dist/${outFile}`,
       banner: generateBanner(pkg.name, outFile, version),
       globals,
       format,
-      exports: format !== 'es' ? 'named' : 'auto'
+      exports: 'auto'
     },
     plugins: [
       typescript({
@@ -89,8 +78,7 @@ const getConfig = ({ outFile, format, mode }) => {
       }),
       resolve(),
       json(),
-      isProduction && terser(),
-      progress()
+      isProduction && terser()
     ],
     external
   };
