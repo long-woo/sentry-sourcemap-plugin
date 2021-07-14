@@ -10,6 +10,7 @@
 Sentry 上传 sourcemap 文件后，自动删除 .map 文件。
 
 ⚠️ 此插件默认配置了一些初始值：
+
 - release: '1.0.0'，自动读取当前项目 `package.json` 中的 `version`。
 - include: './dist'。
 - configFile: '.sentryclirc'。
@@ -18,7 +19,8 @@ Sentry 上传 sourcemap 文件后，自动删除 .map 文件。
 
 ### 安装
 
-> @longwoo/sentry-sourcemap-plugin 已经包含 @sentry/webpack-plugin 插件，无需安装它。
+> 💡 `@longwoo/sentry-sourcemap-plugin` 已经包含 `@sentry/webpack-plugin` 插件，无需安装它。
+配置与 [`@sentry/webpack-plugin`](https://www.npmjs.com/package/@sentry/webpack-plugin) 一致。
 
 ```sh
 npm install @longwoo/sentry-sourcemap-plugin --save-dev
@@ -26,7 +28,7 @@ npm install @longwoo/sentry-sourcemap-plugin --save-dev
 yarn add @longwoo/sentry-sourcemap-plugin -D
 ```
 
-### vue 项目中，在 `vue.config.js` 文件添加如下配置：
+### vue 项目，在 `vue.config.js` 文件添加如下配置
 
 ```js
 const { SentrySourcemapPlugin } = require('@longwoo/sentry-sourcemap-plugin')
@@ -38,7 +40,7 @@ module.exports = {
 }
 ```
 
-### 其他项目，在 `webpack.config.js` 文件的 `plugins` 选项中增加。
+### 其他项目，在 `webpack.config.js` 文件的 `plugins` 选项中增加
 
 ```js
 const { SentrySourcemapPlugin } = require('@longwoo/sentry-sourcemap-plugin')
