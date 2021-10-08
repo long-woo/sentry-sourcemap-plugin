@@ -1,4 +1,3 @@
-import fs from 'fs'
 import { Compiler } from 'webpack';
 import SentryWebpackPlugin, { SentryCliPluginOptions } from '@sentry/webpack-plugin';
 import rimraf from 'rimraf'

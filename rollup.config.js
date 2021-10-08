@@ -78,7 +78,11 @@ const getConfig = ({ outFile, format, mode }) => {
       }),
       resolve(),
       json(),
-      isProduction && terser()
+      isProduction && terser({
+        format: {
+          comments: /long\.woo/
+        }
+      })
     ],
     external
   };

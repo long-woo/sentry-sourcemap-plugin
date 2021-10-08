@@ -1,7 +1,7 @@
 {
   "name": "@longwoo/sentry-sourcemap-plugin",
   "displayName": "sentry-sourcemap-plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "扩展 `@sentry/webpack-plugin` 插件",
   "main": "dist/sentry-sourcemap-plugin.min.js",
   "module": "dist/sentry-sourcemap-plugin.es.min.js",
@@ -22,10 +22,7 @@
   "homepage": "https://github.com/long-woo/sentry-sourcemap-plugin#readme",
   "license": "MIT",
   "files": [
-    "dist",
-    "LICENSE",
-    "package.json",
-    "README.md"
+    "dist"
   ],
   "keywords": [
     "webpack",
@@ -47,7 +44,7 @@
     "webpack": "^5.41.0"
   },
   "dependencies": {
-    "@sentry/webpack-plugin": "^1.16.0",
+    "@sentry/webpack-plugin": "^1.17.2",
     "rimraf": "^3.0.2"
   }
 }

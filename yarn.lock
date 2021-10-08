@@ -59,10 +59,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@sentry/cli@^1.67.1":
-  version "1.67.1"
-  resolved "https://registry.yarnpkg.com/@sentry/cli/-/cli-1.67.1.tgz#0ae0a892851913083e31f64c7b0ffcdf9f59da58"
-  integrity sha512-TKPBC/mMaC6EageH3s4QM4PVr/QFSfgRuGqfc7cAzRRLnMLTvXsvxlEkVnRGCDglvSru0/NwHf1XSv/Z084zkQ==
+"@sentry/cli@^1.68.0":
+  version "1.69.1"
+  resolved "https://registry.npmmirror.com/@sentry/cli/download/@sentry/cli-1.69.1.tgz#0a6de12346c0f2347d610835a18ff554f2d65adc"
+  integrity sha1-Cm3hI0bA8jR9YQg1oY/1VPLWWtw=
   dependencies:
     https-proxy-agent "^5.0.0"
     mkdirp "^0.5.5"
@@ -71,12 +71,12 @@
     progress "^2.0.3"
     proxy-from-env "^1.1.0"
 
-"@sentry/webpack-plugin@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.nlark.com/@sentry/webpack-plugin/download/@sentry/webpack-plugin-1.16.0.tgz#f9b15b5bb485995e776729b71bcf2d9fad7dca7a"
-  integrity sha1-+bFbW7SFmV53Zym3G88tn619yno=
+"@sentry/webpack-plugin@^1.17.2":
+  version "1.17.2"
+  resolved "https://registry.npmmirror.com/@sentry/webpack-plugin/download/@sentry/webpack-plugin-1.17.2.tgz#0076c4b6b57959aa7f43a96904756549af069c23"
+  integrity sha1-AHbEtrV5Wap/Q6lpBHVlSa8GnCM=
   dependencies:
-    "@sentry/cli" "^1.67.1"
+    "@sentry/cli" "^1.68.0"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -1466,7 +1466,7 @@ responselike@^1.0.2:
 
 rimraf@^3.0.2:
   version "3.0.2"
-  resolved "https://registry.nlark.com/rimraf/download/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
+  resolved "https://registry.npm.taobao.org/rimraf/download/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
   integrity sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=
   dependencies:
     glob "^7.1.3"
