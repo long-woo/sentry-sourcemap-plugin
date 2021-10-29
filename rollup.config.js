@@ -13,7 +13,8 @@ import pkg from './package.json';
  */
 const generateBanner = (name, fileName, version) => {
   return `/*! **************************************************
-** ${name}(${fileName}) version ${version}
+** ${name}(${fileName})
+** version ${version}
 ** (c) long.woo
 ** https://github.com/long-woo/sentry-sourcemap-plugin
 *************************************************** */\n`;
