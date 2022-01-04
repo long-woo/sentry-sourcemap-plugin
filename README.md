@@ -7,7 +7,7 @@
 ![npm download](https://img.shields.io/npm/dm/@longwoo/sentry-sourcemap-plugin?style=flat-square)
 ![GitHub license](https://img.shields.io/github/license/long-woo/sentry-sourcemap-plugin?style=flat-square)
 
-[中文](https://github.com/long-woo/sentry-sourcemap-plugin#readme_zh)
+[中文](https://github.com/long-woo/sentry-sourcemap-plugin/blob/master/README_ZH.md)
 
 Sentry automatically deletes the SourceMap file after uploading it Map file.
 
