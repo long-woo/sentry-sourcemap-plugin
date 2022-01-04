@@ -1,38 +1,36 @@
 # sentry-sourcemap-plugin
 
-> `@sentry/webpack-plugin` extended webpack plugin.
+> `@sentry/webpack-plugin` 扩展的 webpack 插件。
 
 ![npm (scoped)](https://img.shields.io/npm/v/@longwoo/sentry-sourcemap-plugin?color=%23be3031&style=flat-square)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/long-woo/sentry-sourcemap-plugin?include_prereleases&style=flat-square)
 ![npm download](https://img.shields.io/npm/dm/@longwoo/sentry-sourcemap-plugin?style=flat-square)
 ![GitHub license](https://img.shields.io/github/license/long-woo/sentry-sourcemap-plugin?style=flat-square)
 
-[中文](https://github.com/long-woo/sentry-sourcemap-plugin#readme_zh)
+Sentry 上传 sourcemap 文件后，自动删除 .map 文件。
 
-Sentry automatically deletes the SourceMap file after uploading it Map file.
+⚠️ 此插件默认配置了一些初始值：
 
-⚠️ This plugin is configured with some initial values by default:：
-
-- release: '1.0.0', automatically read the `version` in the current project `package.json`。
+- release: '1.0.0'，自动读取当前项目 `package.json` 中的 `version`。
 - include: './dist'。
 - configFile: '.sentryclirc'。
 
-## Use
+## 使用
 
-### Install
+### 安装
 
-> 💡 `@longwoo/sentry-sourcemap-plugin` already contains `@sentry/webpack-plugin` plugin, no need to install it.
-The configuration is consistent with [`@sentry/webpack-plugin`](https://www.npmjs.com/package/@sentry/webpack-plugin).
+> 💡 `@longwoo/sentry-sourcemap-plugin` 已经包含 `@sentry/webpack-plugin` 插件，无需安装它。
+配置与 [`@sentry/webpack-plugin`](https://www.npmjs.com/package/@sentry/webpack-plugin) 一致。
 
 ```sh
 npm install @longwoo/sentry-sourcemap-plugin --save-dev
-# or
+# 或
 yarn add @longwoo/sentry-sourcemap-plugin -D
 ```
 
-### Vue project
+### Vue 项目
 
-Add the following configuration in the `vue.config.js` file:
+在 `vue.config.js` 文件添加如下配置：
 
 ```js
 const { SentrySourcemapPlugin } = require('@longwoo/sentry-sourcemap-plugin')
@@ -46,7 +44,7 @@ module.exports = {
 
 ### Webpack
 
-Added in the `plugins` option of the `webpack.config.js` file:
+在 `webpack.config.js` 文件的 `plugins` 选项中增加：
 
 ```js
 const { SentrySourcemapPlugin } = require('@longwoo/sentry-sourcemap-plugin')

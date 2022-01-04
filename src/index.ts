@@ -7,7 +7,7 @@ const DEFAULT_INCLUDE = './dist'
 
 class SentrySourcemapPlugin {
   private readonly pluginName = 'SentrySourcemapPlugin'
-  private readonly mapFilePath:string = `${DEFAULT_INCLUDE}/**/*.map`
+  private readonly mapFilePath: string = `${DEFAULT_INCLUDE}/**/*.map`
   private readonly sentryConfig: SentryCliPluginOptions = {
     release: '1.0.0',
     include: DEFAULT_INCLUDE,
