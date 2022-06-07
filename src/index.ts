@@ -20,6 +20,7 @@ class SentrySourcemapPlugin {
       release: process.env.npm_package_version,
       ...options
     }
+
     this.mapFilePath = `${this.sentryConfig.include}/**/*.map`
   }
 

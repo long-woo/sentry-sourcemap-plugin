@@ -75,7 +75,7 @@ const getConfig = ({ outFile, format, mode }) => {
       typescript({
         exclude: 'node_modules/**',
         typescript: require('typescript'),
-        useTsconfigDeclarationDir: true
+        useTsconfigDeclarationDir: true,
       }),
       resolve(),
       json(),
