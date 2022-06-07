@@ -8,7 +8,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "nodemon",
-    "build": "rollup -c & tsc --outDir dist src/postinstall.ts",
+    "build": "rollup -w -c & tsc --outDir dist src/postinstall.ts",
     "postinstall": "node -e \"try{require('./dist/postinstall')}catch(err){}\""
   },
   "author": "long.woo",
@@ -36,7 +36,6 @@
     "@rollup/plugin-node-resolve": "^13.1.2",
     "@types/rimraf": "^3.0.2",
     "@types/webpack": "^5.28.0",
-    "nodemon": "^2.0.15",
     "rollup": "^2.62.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
