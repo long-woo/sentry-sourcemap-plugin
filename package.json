@@ -31,6 +31,13 @@
     "sourcemap",
     "插件"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/sentry-sourcemap-plugin.es.js",
+      "require": "./dist/sentry-sourcemap-plugin.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.1.2",
