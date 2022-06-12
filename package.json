@@ -45,7 +45,7 @@
     "@types/webpack": "^5.28.0",
     "rollup": "^2.62.0",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-typescript2": "^0.32.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.3",
     "webpack": "^5.65.0"

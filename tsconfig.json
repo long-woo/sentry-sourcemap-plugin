@@ -20,8 +20,7 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"esModuleInterop": true,
-    "lib": ["ES5", "ESNext"],
-    "types": ["node", "webpack"]
+    "lib": ["ES5", "ESNext"]
   },
   "include": ["src"],
   "exclude": ["src/postinstall.ts"]
