@@ -1,7 +1,7 @@
 {
   "name": "@longwoo/sentry-sourcemap-plugin",
   "displayName": "sentry-sourcemap-plugin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "`@sentry/webpack-plugin` extended webpack plugin.",
   "main": "dist/sentry-sourcemap-plugin.min.js",
   "module": "dist/sentry-sourcemap-plugin.es.min.js",
@@ -51,7 +51,7 @@
     "webpack": "^5.65.0"
   },
   "dependencies": {
-    "@sentry/webpack-plugin": "^1.18.9",
+    "@sentry/webpack-plugin": "^1.19.0",
     "rimraf": "^3.0.2"
   }
 }

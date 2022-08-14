@@ -33,7 +33,7 @@ defaults.project = 项目名称`
       return
     }
 
-    console.log('文件创建成功，请在项目根目录的 .sentryclirc 文件填写配置内容。')
+    console.log(`文件创建成功，请在项目根目录的 ${RC_FILE} 文件填写配置内容。`)
   })
 }
 
