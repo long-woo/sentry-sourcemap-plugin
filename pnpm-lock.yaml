@@ -10,7 +10,7 @@ specifiers:
   rimraf: ^3.0.2
   rollup: ^2.79.1
   rollup-plugin-terser: ^7.0.2
-  rollup-plugin-typescript2: ^0.32.1
+  rollup-plugin-typescript2: ^0.34.0
   tslib: ^2.4.1
   typescript: ^4.9.3
   webpack: ^5.75.0
@@ -27,7 +27,7 @@ devDependencies:
   '@types/webpack': 5.28.0
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
-  rollup-plugin-typescript2: 0.32.1_k35zwyycrckt5xfsejji7kbwn4
+  rollup-plugin-typescript2: 0.34.1_k35zwyycrckt5xfsejji7kbwn4
   tslib: 2.4.1
   typescript: 4.9.3
   webpack: 5.75.0
@@ -1674,6 +1674,13 @@ packages:
       yallist: 2.1.2
     dev: true
 
+  /lru-cache/6.0.0:
+    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
+    engines: {node: '>=10'}
+    dependencies:
+      yallist: 4.0.0
+    dev: true
+
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
@@ -2116,8 +2123,8 @@ packages:
       terser: 5.15.1
     dev: true
 
-  /rollup-plugin-typescript2/0.32.1_k35zwyycrckt5xfsejji7kbwn4:
-    resolution: {integrity: sha512-RanO8bp1WbeMv0bVlgcbsFNCn+Y3rX7wF97SQLDxf0fMLsg0B/QFF005t4AsGUcDgF3aKJHoqt4JF2xVaABeKw==}
+  /rollup-plugin-typescript2/0.34.1_k35zwyycrckt5xfsejji7kbwn4:
+    resolution: {integrity: sha512-P4cHLtGikESmqi1CA+tdMDUv8WbQV48mzPYt77TSTOPJpERyZ9TXdDgjSDix8Fkqce6soYz3+fa4lrC93IEkcw==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
@@ -2125,8 +2132,8 @@ packages:
       '@rollup/pluginutils': 4.2.1
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
-      resolve: 1.22.1
       rollup: 2.79.1
+      semver: 7.3.8
       tslib: 2.4.1
       typescript: 4.9.3
     dev: true
@@ -2182,6 +2189,14 @@ packages:
   /semver/6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
+    dev: true
+
+  /semver/7.3.8:
+    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
     dev: true
 
   /serialize-javascript/4.0.0:
@@ -2682,6 +2697,10 @@ packages:
 
   /yallist/2.1.2:
     resolution: {integrity: sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A==}
+    dev: true
+
+  /yallist/4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
   /yargs-parser/18.1.3:
