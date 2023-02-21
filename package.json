@@ -41,7 +41,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
     "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
     "@types/rimraf": "^3.0.2",
     "@types/webpack": "^5.28.0",
     "rollup": "^3.0.0",
