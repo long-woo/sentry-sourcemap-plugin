@@ -46,7 +46,7 @@
     "@types/rimraf": "^4.0.5",
     "@types/webpack": "^5.28.1",
     "rollup": "^3.20.2",
-    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-typescript2": "^0.35.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.2",
     "webpack": "^5.76.3"
